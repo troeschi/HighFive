@@ -1,8 +1,8 @@
 Deutsch unten...
 # HighFive<br>
 Windows 10 / 11 and Linux (testet with Linux Mint)<br>
-Extended Dice rolling Game written in Pascal
-<img width="600" height="390" alt="grafik" src="https://github.com/user-attachments/assets/7541f5e1-661d-459a-90f0-a120cba31535" />
+Extended Dice rolling Game written in Pascal<br>
+<p><img width="600" height="390" alt="grafik" src="https://github.com/user-attachments/assets/7541f5e1-661d-459a-90f0-a120cba31535" /></p>
 <p>
 Extended Dice rolling game for one or two players, two players on "Hot seat" or over network. 
 internet will also work if you redirect ports in your router... there are only plain-text-strings send, but there is no security checking so it is on you :-)
