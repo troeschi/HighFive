@@ -3,6 +3,7 @@ Deutsch unten...
 Windows 10 / 11 and Linux (testet with Linux Mint)
 Extended Dice rolling Game written in Pascal
 <img width="600" height="390" alt="grafik" src="https://github.com/user-attachments/assets/7541f5e1-661d-459a-90f0-a120cba31535" />
+<p>
 Extended Dice rolling game for one or two players, two players on "Hot seat" or over network. 
 internet will also work if you redirect ports in your router... there are only plain-text-strings send, but there is no security checking so it is on you :-)
 
@@ -19,7 +20,8 @@ fifth column you can write where you like.
 there is no Computer-Player right now. will come later..
 
 Have fun and let me know if you like it, or something doesn´t work
-
+</p>
+<p>
 # HighFive
 Windows 10 / 11 und Linux (getestet unter Linux Mint)
 Erweitertes Würfelspiel für einen oder zwei Spieler, zwei Spieler mit "Hot seat" oder über Netzwerk.
@@ -37,6 +39,7 @@ In der Fünften Reihe kann überall geschrieben werden.
 Es gibt noch keinen Computer Gegner / Mitspieler
 
 Have fun und ich würde mich über Feedback freuen, auch wenn etwas nicht läuft...
+</p>
 
 
 
