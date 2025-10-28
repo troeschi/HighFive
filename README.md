@@ -9,7 +9,7 @@ internet will also work if you redirect ports in your router... there are only p
 <br><br>
 It is written in Pascal, compiled with <a href=https://www.freepascal.org/>FPC</A> using <a href=https://www.lazarus-ide.org/>Lazarus</a>.
 You need the libaries Lnet and bgraControls installed.
-<br>br>
+<br><br>
 There are five columns:<br>
 first one you must fill up to down. means ones than two-es....<br>
 second column you must fill down to up. means chance, highfive....<br>
