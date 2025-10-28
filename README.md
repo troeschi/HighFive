@@ -6,7 +6,7 @@ Extended Dice rolling Game written in Pascal<br>
 <p>
 Extended Dice rolling game for one or two players, two players on "Hot seat" or over network. 
 internet will also work if you redirect ports in your router... there are only plain-text-strings send, but there is no security checking so it is on you :-)
-<br>br>
+<br><br>
 It is written in Pascal, compiled with <a href=https://www.freepascal.org/>FPC</A> using <a href=https://www.lazarus-ide.org/>Lazarus</a>.
 You need the libaries Lnet and bgraControls installed.
 <br>br>
@@ -18,7 +18,7 @@ fourth column lower part must be filled first
 fifth column you can write where you like.
 <br>br>
 there is no Computer-Player right now. will come later..
-<br>br>
+<br><br>
 Have fun and let me know if you like it, or something doesn´t work
 </p>
 <p>
@@ -35,9 +35,9 @@ In der Zweiten von unten nach oben. also erst chance dann HighFive...
 In der Dritten Reihe muss der obere Teil erst ausgefüllt werden.
 In der Vierten der untere Teil zuerst.
 In der Fünften Reihe kann überall geschrieben werden.
-<br>br>
+<br><br>
 Es gibt noch keinen Computer Gegner / Mitspieler
-<br>br>
+<br><br>
 Have fun und ich würde mich über Feedback freuen, auch wenn etwas nicht läuft...
 </p>
 
