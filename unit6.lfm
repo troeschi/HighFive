@@ -1,0 +1,116 @@
+object Form6: TForm6
+  Left = 311
+  Height = 254
+  Top = 250
+  Width = 320
+  BorderIcons = [biSystemMenu]
+  BorderStyle = bsDialog
+  Caption = 'Form6'
+  ClientHeight = 254
+  ClientWidth = 320
+  Position = poMainFormCenter
+  object Edit1: TEdit
+    Left = 24
+    Height = 23
+    Top = 32
+    Width = 120
+    TabOrder = 0
+  end
+  object Edit2: TEdit
+    Left = 24
+    Height = 23
+    Top = 88
+    Width = 120
+    Alignment = taRightJustify
+    NumbersOnly = True
+    TabOrder = 1
+  end
+  object Edit3: TEdit
+    Left = 24
+    Height = 23
+    Top = 144
+    Width = 120
+    Alignment = taRightJustify
+    NumbersOnly = True
+    TabOrder = 2
+  end
+  object Label1: TLabel
+    Left = 24
+    Height = 15
+    Top = 16
+    Width = 28
+    Caption = 'Host:'
+    FocusControl = Edit1
+  end
+  object Label2: TLabel
+    Left = 24
+    Height = 15
+    Top = 72
+    Width = 25
+    Caption = 'Port:'
+    FocusControl = Edit2
+  end
+  object Label3: TLabel
+    Left = 24
+    Height = 15
+    Top = 128
+    Width = 114
+    Caption = 'Verzögerung Würfeln:'
+    FocusControl = Edit3
+  end
+  object Edit4: TEdit
+    Left = 24
+    Height = 23
+    Top = 200
+    Width = 120
+    Alignment = taRightJustify
+    NumbersOnly = True
+    TabOrder = 3
+  end
+  object Label4: TLabel
+    Left = 24
+    Height = 15
+    Top = 184
+    Width = 104
+    Caption = 'Verzögerung Server:'
+    FocusControl = Edit4
+  end
+  object StaticText1: TStaticText
+    Left = 168
+    Height = 36
+    Top = 131
+    Width = 137
+    Caption = '(Zeitverzögerung der Würfelanimation)'
+    TabOrder = 4
+  end
+  object StaticText2: TStaticText
+    Left = 168
+    Height = 36
+    Top = 187
+    Width = 137
+    Caption = '(Zeitverzögerung bei Senden der Nachrichten)'
+    TabOrder = 5
+  end
+  object BitBtn1: TBitBtn
+    Left = 168
+    Height = 30
+    Top = 32
+    Width = 137
+    Default = True
+    DefaultCaption = True
+    Kind = bkOK
+    ModalResult = 1
+    TabOrder = 6
+  end
+  object BitBtn2: TBitBtn
+    Left = 168
+    Height = 30
+    Top = 81
+    Width = 137
+    Cancel = True
+    DefaultCaption = True
+    Kind = bkCancel
+    ModalResult = 2
+    TabOrder = 7
+  end
+end

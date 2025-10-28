@@ -1,0 +1,128 @@
+object Form5: TForm5
+  Left = 311
+  Height = 501
+  Top = 250
+  Width = 382
+  BorderIcons = [biSystemMenu]
+  BorderStyle = bsDialog
+  Caption = 'Bestenliste'
+  ClientHeight = 501
+  ClientWidth = 382
+  Color = clSkyBlue
+  Position = poMainFormCenter
+  OnShow = FormShow
+  object Edit1: TEdit
+    Left = 24
+    Height = 23
+    Top = 48
+    Width = 240
+    MaxLength = 70
+    TabOrder = 0
+  end
+  object BitBtn1: TBitBtn
+    Left = 285
+    Height = 30
+    Top = 456
+    Width = 75
+    DefaultCaption = True
+    Kind = bkOK
+    ModalResult = 1
+    TabOrder = 1
+  end
+  object Label1: TLabel
+    Left = 24
+    Height = 15
+    Top = 32
+    Width = 35
+    Caption = 'Name:'
+  end
+  object Image1: TImage
+    Left = 24
+    Height = 32
+    Top = 32
+    Width = 32
+    ImageIndex = 39
+    Images = Form1.ImageList1
+  end
+  object Image2: TImage
+    Left = 328
+    Height = 32
+    Top = 32
+    Width = 32
+    ImageIndex = 39
+    Images = Form1.ImageList1
+  end
+  object Image3: TImage
+    Left = 112
+    Height = 32
+    Top = 32
+    Width = 32
+    ImageIndex = 39
+    Images = Form1.ImageList1
+  end
+  object Image4: TImage
+    Left = 216
+    Height = 32
+    Top = 32
+    Width = 32
+    ImageIndex = 39
+    Images = Form1.ImageList1
+  end
+  object Button1: TButton
+    Left = 272
+    Height = 25
+    Top = 48
+    Width = 88
+    Caption = 'Speichern'
+    TabOrder = 2
+    OnClick = SaveHighScore
+  end
+  object StringGrid1: TStringGrid
+    Left = 24
+    Height = 356
+    Top = 88
+    Width = 336
+    BorderStyle = bsNone
+    Color = clSkyBlue
+    ColCount = 3
+    ColRowDragIndicatorColor = clNone
+    ColSizingCursor = crNo
+    Columns = <    
+      item
+        ReadOnly = True
+        Title.Font.Color = 16119285
+        Title.Caption = 'Title'
+        Width = 50
+      end    
+      item
+        Alignment = taCenter
+        ReadOnly = True
+        Title.Font.Color = 16119285
+        Title.Caption = 'Title'
+        Width = 65
+      end    
+      item
+        ReadOnly = True
+        Title.Font.Color = 16119285
+        Title.Caption = 'Title'
+        Width = 215
+      end>
+    ExtendedSelect = False
+    FixedCols = 0
+    FixedRows = 0
+    Flat = True
+    FocusColor = clNone
+    GridLineColor = clNone
+    GridLineStyle = psClear
+    Options = [goFixedVertLine, goFixedHorzLine, goVertLine, goHorzLine, goRowMoving, goRowSelect, goSmoothScroll, goRowHighlight]
+    RowSizingCursor = crNo
+    ScrollBars = ssAutoVertical
+    TabOrder = 3
+    TabStop = False
+    ColWidths = (
+      50
+      65
+      215
+    )
+  end
+end

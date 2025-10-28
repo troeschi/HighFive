@@ -1,0 +1,585 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: \n"
+"POT-Creation-Date: \n"
+"PO-Revision-Date: \n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: de\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 3.6\n"
+
+#: tform1.bcsvgviewer1.caption
+msgid "BCSVGViewer1"
+msgstr "BCSVGViewer1"
+
+#: tform1.bcsvgviewer1.hint
+msgctxt "tform1.bcsvgviewer1.hint"
+msgid "Behalten durch anklicken "
+msgstr "Behalten durch anklicken "
+
+#: tform1.bcsvgviewer2.caption
+msgid "BCSVGViewer2"
+msgstr "BCSVGViewer2"
+
+#: tform1.bcsvgviewer2.hint
+msgctxt "tform1.bcsvgviewer2.hint"
+msgid "Behalten durch anklicken "
+msgstr "Behalten durch anklicken "
+
+#: tform1.bcsvgviewer3.caption
+msgid "BCSVGViewer3"
+msgstr "BCSVGViewer3"
+
+#: tform1.bcsvgviewer3.hint
+msgctxt "tform1.bcsvgviewer3.hint"
+msgid "Behalten durch anklicken "
+msgstr "Behalten durch anklicken "
+
+#: tform1.bcsvgviewer4.caption
+msgid "BCSVGViewer4"
+msgstr "BCSVGViewer4"
+
+#: tform1.bcsvgviewer4.hint
+msgctxt "tform1.bcsvgviewer4.hint"
+msgid "Behalten durch anklicken "
+msgstr "Behalten durch anklicken "
+
+#: tform1.bcsvgviewer5.caption
+msgid "BCSVGViewer5"
+msgstr "BCSVGViewer5"
+
+#: tform1.bcsvgviewer5.hint
+msgctxt "tform1.bcsvgviewer5.hint"
+msgid "Behalten durch anklicken "
+msgstr "Behalten durch anklicken "
+
+#: tform1.bcsvgviewer6.caption
+msgid "BCSVGViewer6"
+msgstr "BCSVGViewer6"
+
+#: tform1.bcsvgviewer6.hint
+msgid "Würfeln"
+msgstr "Würfeln"
+
+#: tform1.bitbtn1.caption
+msgid "Beenden"
+msgstr "Beenden"
+
+#: tform1.caption
+msgid "HighFive"
+msgstr "HighFive"
+
+#: tform1.checkbox1.caption
+msgid "Server"
+msgstr "Server"
+
+#: tform1.checkbox1.hint
+msgid "Dieses Gerät als Server"
+msgstr "Dieses Gerät als Server"
+
+#: tform1.diceroll1.hint
+msgctxt "tform1.diceroll1.hint"
+msgid "Anzahl Würfe"
+msgstr "Anzahl Würfe"
+
+#: tform1.diceroll2.hint
+msgctxt "tform1.diceroll2.hint"
+msgid "Anzahl Würfe"
+msgstr "Anzahl Würfe"
+
+#: tform1.diceroll3.hint
+msgctxt "tform1.diceroll3.hint"
+msgid "Anzahl Würfe"
+msgstr "Anzahl Würfe"
+
+#: tform1.dividerbevel1.caption
+msgctxt "tform1.dividerbevel1.caption"
+msgid "Spieler eins"
+msgstr "Spieler eins"
+
+#: tform1.dividerbevel2.caption
+msgctxt "tform1.dividerbevel2.caption"
+msgid "Spieler zwei"
+msgstr "Spieler zwei"
+
+#: tform1.edit1.hint
+msgid "Server-IP"
+msgstr "Server-IP"
+
+#: tform1.edit1.text
+msgid "192.168.100.100"
+msgstr "192.168.100.100"
+
+#: tform1.panel1.caption
+msgid "Panel1"
+msgstr "Panel1"
+
+#: tform1.speedbutton1.hint
+msgid "Rückgängig"
+msgstr "Rückgängig"
+
+#: tform1.speedbutton10.hint
+msgid "Zug beenden"
+msgstr "Zug beenden"
+
+#: tform1.speedbutton11.hint
+msgid "Ein- / Ausgehende Nachrichten"
+msgstr "Ein- / Ausgehende Nachrichten"
+
+#: tform1.speedbutton12.hint
+msgctxt "tform1.speedbutton12.hint"
+msgid "Deutsch"
+msgstr "Deutsch"
+
+#: tform1.speedbutton13.hint
+msgctxt "tform1.speedbutton13.hint"
+msgid "Englisch"
+msgstr "Englisch"
+
+#: tform1.speedbutton14.hint
+msgid "Über..."
+msgstr "Über..."
+
+#: tform1.speedbutton17.hint
+msgctxt "tform1.speedbutton17.hint"
+msgid "Bestenliste"
+msgstr "Bestenliste"
+
+#: tform1.speedbutton2.hint
+msgid "Neues Spiel"
+msgstr "Neues Spiel"
+
+#: tform1.speedbutton3.hint
+msgctxt "tform1.speedbutton3.hint"
+msgid "Spiel speichern"
+msgstr "Spiel speichern"
+
+#: tform1.speedbutton4.hint
+msgctxt "tform1.speedbutton4.hint"
+msgid "Spiel laden"
+msgstr "Spiel laden"
+
+#: tform1.speedbutton5.hint
+msgid "Ein Spieler"
+msgstr "Ein Spieler"
+
+#: tform1.speedbutton6.hint
+msgid "Zwei Spieler"
+msgstr "Zwei Spieler"
+
+#: tform1.speedbutton7.hint
+msgid "Hot Seat (Zwei Spieler an diesem Gerät)"
+msgstr "Hot Seat (Zwei Spieler an diesem Gerät)"
+
+#: tform1.speedbutton8.hint
+msgid "Zwei Spieler über Netzwerk"
+msgstr "Zwei Spieler über Netzwerk"
+
+#: tform1.speedbutton9.hint
+msgid ""
+"Server Start / Verbinden -\n"
+"oder Verbindung trennen"
+msgstr ""
+"Server Start / Verbinden -\n"
+"oder Verbindung trennen"
+
+#: tform1.statictext1.caption
+msgctxt "tform1.statictext1.caption"
+msgid "Spieler eins"
+msgstr "Spieler eins"
+
+#: tform1.statictext3.caption
+msgctxt "tform1.statictext3.caption"
+msgid "Total:"
+msgstr "Total:"
+
+#: tform1.statictext4.caption
+msgctxt "tform1.statictext4.caption"
+msgid "Spieler zwei"
+msgstr "Spieler zwei"
+
+#: tform1.statictext5.caption
+msgctxt "tform1.statictext5.caption"
+msgid "Total:"
+msgstr "Total:"
+
+#: tform2.bitbtn1.caption
+msgctxt "tform2.bitbtn1.caption"
+msgid "Speichern"
+msgstr "Speichern"
+
+#: tform2.bitbtn2.caption
+msgid "Löschen"
+msgstr "Löschen"
+
+#: tform2.bitbtn3.caption
+msgid "Abbrechen"
+msgstr "Abbrechen"
+
+#: tform2.caption
+msgctxt "tform2.caption"
+msgid "Spiel speichern"
+msgstr "Spiel speichern"
+
+#: tform2.image1.hint
+msgid "One Player Games"
+msgstr "One Player Games"
+
+#: tform2.image2.hint
+msgid "Two Player Games"
+msgstr "Two Player Games"
+
+#: tform2.image3.hint
+msgid "Network Games"
+msgstr "Network Games"
+
+#: tform2.label1.caption
+msgid "Vorhandene Spielstände:"
+msgstr "Vorhandene Spielstände:"
+
+#: tform2.label2.caption
+msgctxt "tform2.label2.caption"
+msgid "Speichern unter:"
+msgstr "Speichern unter:"
+
+#: tform4.caption
+msgid "Info"
+msgstr "Info"
+
+#: tform4.statictext1.caption
+msgid "Written by "
+msgstr "Written by "
+
+#: tform4.statictext10.caption
+msgid "BGRAControls"
+msgstr "BGRAControls"
+
+#: tform4.statictext11.caption
+msgid "Dice graphics (Skoll) provided under the Creative Commons 3.0 BY Andy Meneely:"
+msgstr "Dice graphics (Skoll) provided under the Creative Commons 3.0 BY Andy Meneely:"
+
+#: tform4.statictext12.caption
+msgid "http://www.se.rit.edu/~andy/"
+msgstr "http://www.se.rit.edu/~andy/"
+
+#: tform4.statictext13.caption
+msgid "Icons used can be found "
+msgstr "Icons used can be found "
+
+#: tform4.statictext14.caption
+msgid "Here"
+msgstr "Here"
+
+#: tform4.statictext15.caption
+msgid "Source Code on GitHub: "
+msgstr "Source Code on GitHub: "
+
+#: tform4.statictext16.caption
+msgid "Troeschi/HighFive"
+msgstr "Troeschi/HighFive"
+
+#: tform4.statictext2.caption
+msgid "StaticText2"
+msgstr "StaticText2"
+
+#: tform4.statictext3.caption
+msgid "A.Trösch"
+msgstr "A.Trösch"
+
+#: tform4.statictext4.caption
+msgid "Compiled with "
+msgstr "Compiled with "
+
+#: tform4.statictext5.caption
+msgid "FPC "
+msgstr "FPC "
+
+#: tform4.statictext6.caption
+msgid "using"
+msgstr "using"
+
+#: tform4.statictext7.caption
+msgid "Lazarus"
+msgstr "Lazarus"
+
+#: tform4.statictext8.caption
+msgid "Libaries used: "
+msgstr "Libaries used: "
+
+#: tform4.statictext9.caption
+msgid "Lnet,"
+msgstr "Lnet,"
+
+#: tform5.button1.caption
+msgctxt "tform5.button1.caption"
+msgid "Speichern"
+msgstr "Speichern"
+
+#: tform5.caption
+msgctxt "tform5.caption"
+msgid "Bestenliste"
+msgstr "Bestenliste"
+
+#: tform5.label1.caption
+msgid "Name:"
+msgstr "Name:"
+
+#: tform5.stringgrid1.columns[0].title.caption
+msgctxt "tform5.stringgrid1.columns[0].title.caption"
+msgid "Title"
+msgstr "Title"
+
+#: tform5.stringgrid1.columns[1].title.caption
+msgctxt "tform5.stringgrid1.columns[1].title.caption"
+msgid "Title"
+msgstr "Title"
+
+#: tform5.stringgrid1.columns[2].title.caption
+msgctxt "tform5.stringgrid1.columns[2].title.caption"
+msgid "Title"
+msgstr "Title"
+
+#: tform6.caption
+msgid "Form6"
+msgstr "Optionen"
+
+#: tform6.label1.caption
+msgid "Host:"
+msgstr "Host:"
+
+#: tform6.label2.caption
+msgid "Port:"
+msgstr "Port:"
+
+#: tform6.label3.caption
+msgid "Verzögerung Würfeln:"
+msgstr "Verzögerung Würfeln:"
+
+#: tform6.label4.caption
+msgid "Verzögerung Server:"
+msgstr "Verzögerung Server:"
+
+#: tform6.statictext1.caption
+msgid "(Zeitverzögerung der Würfelanimation)"
+msgstr "(Zeitverzögerung der Würfelanimation)"
+
+#: tform6.statictext2.caption
+msgid "(Zeitverzögerung bei Senden der Nachrichten)"
+msgstr "(Zeitverzögerung bei Senden der Nachrichten)"
+
+#: translatestr.allreadyusedstr
+msgid "Bereits genutzt!"
+msgstr "Bereits genutzt!"
+
+#: translatestr.cantcreatedir1
+msgid "Kann Verzeichnis "
+msgstr "Kann Verzeichnis "
+
+#: translatestr.cantcreatedir2
+msgid " nicht erstellen!"
+msgstr " nicht erstellen!"
+
+#: translatestr.deletestr
+msgid "löschen?"
+msgstr "löschen?"
+
+#: translatestr.endprogram
+msgid "Programm wird beendet."
+msgstr "Programm wird beendet."
+
+#: translatestr.firstendmove
+msgid "Erst \"Zug beendet\" anklicken!"
+msgstr "Erst \"Zug beendet\" anklicken!"
+
+#: translatestr.isnotwrittenstr
+msgid "Ergebnis nicht eingetragen!"
+msgstr "Ergebnis nicht eingetragen!"
+
+#: translatestr.loadgamestr1
+msgid "Laden"
+msgstr "Laden"
+
+#: translatestr.loadgamestr2
+msgid "Fehler beim Laden von "
+msgstr "Fehler beim Laden von "
+
+#: translatestr.loadgamestr3
+msgctxt "translatestr.loadgamestr3"
+msgid "Lade Spiel:"
+msgstr "Lade Spiel:"
+
+#: translatestr.netgamestr1
+msgid "Netzwerkspiele lädt der Server-Spieler!"
+msgstr "Netzwerkspiele lädt der Server-Spieler!"
+
+#: translatestr.newgamestr1
+msgid "Neues Spiel starten ?"
+msgstr "Neues Spiel starten ?"
+
+#: translatestr.nodices
+msgid "Ohne Würfel würfeln?"
+msgstr "Ohne Würfel würfeln?"
+
+#: translatestr.nodices2
+msgid "Alle Würfel werden gehalten..."
+msgstr "Alle Würfel werden gehalten..."
+
+#: translatestr.overridestr1
+msgid "Spielstand überschreiben?"
+msgstr "Spielstand überschreiben?"
+
+#: translatestr.pmessagestr
+msgid "Nachricht: "
+msgstr "Nachricht: "
+
+#: translatestr.savegamestr1
+msgid "Fehler beim Speichern von "
+msgstr "Fehler beim Speichern von "
+
+#: translatestr.savegamestr2
+msgid "Netzwerkspiele speichert der Server-Spieler!"
+msgstr "Netzwerkspiele speichert der Server-Spieler!"
+
+#: translatestr.savegamestr3
+msgctxt "translatestr.savegamestr3"
+msgid "Speichern"
+msgstr "Speichern"
+
+#: translatestr.savegamestr4
+msgctxt "translatestr.savegamestr4"
+msgid "Speichern unter:"
+msgstr "Speichern unter:"
+
+#: translatestr.serverstart1
+msgid "Server gestartet..."
+msgstr "Server gestartet..."
+
+#: translatestr.serverstart2
+msgid "Server konnte nicht gestartet werden!"
+msgstr "Server konnte nicht gestartet werden!"
+
+#: translatestr.serverstart3
+msgid "Mit Server verbunden..."
+msgstr "Mit Server verbunden..."
+
+#: translatestr.serverstart4
+msgid "Verbinden"
+msgstr "Verbinden"
+
+#: translatestr.serverstart5
+msgctxt "translatestr.serverstart5"
+msgid "Server angehalten..."
+msgstr "Server angehalten..."
+
+#: translatestr.serverstopped
+msgctxt "translatestr.serverstopped"
+msgid "Server angehalten..."
+msgstr "Server angehalten..."
+
+#: translatestr.serverstopped2
+msgctxt "translatestr.serverstopped2"
+msgid "Von Server getrennt..."
+msgstr "Von Server getrennt..."
+
+#: translatestr.serverstopped3
+msgid "Trennen"
+msgstr "Trennen"
+
+#: translatestr.serverstopped4
+msgid "Verbindung mit Server konnte nicht hergestellt werden!"
+msgstr "Verbindung mit Server konnte nicht hergestellt werden!"
+
+#: translatestr.serverstopped5
+msgctxt "translatestr.serverstopped5"
+msgid "Von Server getrennt..."
+msgstr "Von Server getrennt..."
+
+#: translatestr.srvdialoglg1
+msgid "Anfrage Server: Spiel laden?"
+msgstr "Anfrage Server: Spiel laden?"
+
+#: translatestr.srvdialoglg2
+msgid "Client: Spiel laden zurückgewiesen"
+msgstr "Client: Spiel laden zurückgewiesen"
+
+#: translatestr.srvdialogng1
+msgid "Anfrage Server: Neues Spiel?"
+msgstr "Anfrage Server: Neues Spiel?"
+
+#: translatestr.srvdialogng2
+msgid "Client: Neues Spiel zurückgewiesen"
+msgstr "Client: Neues Spiel zurückgewiesen"
+
+#: translatestr.srvdialogrsv1
+msgid "Spieler 2: Spalte:"
+msgstr "Spieler 2: Spalte:"
+
+#: translatestr.srvdialogrsv2
+msgid " Reihe:"
+msgstr " Reihe:"
+
+#: translatestr.srvdialogrsv3
+msgid " Wert: "
+msgstr " Wert: "
+
+#: translatestr.strikestr1
+msgid "3er streichen ?"
+msgstr "3er streichen ?"
+
+#: translatestr.strikestr2
+msgid "4er streichen ?"
+msgstr "4er streichen ?"
+
+#: translatestr.strikestr3
+msgid "Kl. Strasse streichen ?"
+msgstr "Kl. Strasse streichen ?"
+
+#: translatestr.strikestr4
+msgid "Gr. Strasse streichen ?"
+msgstr "Gr. Strasse streichen ?"
+
+#: translatestr.strikestr5
+msgid "Full House streichen ?"
+msgstr "Full House streichen ?"
+
+#: translatestr.strikestr6
+#, fuzzy
+#| msgid "Kniffel streichen ?"
+msgid "HighFive streichen ?"
+msgstr "HighFive streichen ?"
+
+#: translatestr.strikestr7
+msgid "Chance schreiben ?"
+msgstr "Chance schreiben ?"
+
+#: translatestr.svdlgcaption1
+msgid "Spiel Speichern"
+msgstr "Spiel Speichern"
+
+#: translatestr.svdlgcaption2
+msgid "Spiel Laden"
+msgstr "Spiel Laden"
+
+#: translatestr.undolastentrystr
+msgid "Letzen Eintrag wiederrufen?"
+msgstr "Letzen Eintrag wiederrufen?"
+
+#: translatestr.valgridstr1
+msgid "In dieser Reihe muss jedes vorige Feld erst ausgefüllt werden!"
+msgstr "In dieser Reihe muss jedes vorige Feld erst ausgefüllt werden!"
+
+#: translatestr.valgridstr2
+msgid "In dieser Reihe muss jedes untere Feld erst ausgefüllt werden!"
+msgstr "In dieser Reihe muss jedes untere Feld erst ausgefüllt werden!"
+
+#: translatestr.valgridstr3
+msgid "In dieser Reihe muss der obere Teil als erstes ausgefüllt werden!"
+msgstr "In dieser Reihe muss der obere Teil als erstes ausgefüllt werden!"
+
+#: translatestr.valgridstr4
+msgid "In dieser Reihe muss der untere Teil als erstes ausgefüllt werden!"
+msgstr "In dieser Reihe muss der untere Teil als erstes ausgefüllt werden!"
+
