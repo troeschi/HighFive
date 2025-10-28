@@ -25,7 +25,7 @@ Have fun and let me know if you like it, or something doesn´t work
 # HighFive<br>
 Windows 10 / 11 und Linux (getestet unter Linux Mint)<br>
 Erweitertes Würfelspiel für einen oder zwei Spieler, zwei Spieler mit "Hot seat" oder über Netzwerk.
-Über Internet geht auch, wenn die Portweiterleitung im Router gesetzt wird....es werden nur einfache textzeilen gesendet, aber es gibt <b>einerlei sicherheits-checks!</B>.
+Über Internet geht auch, wenn die Portweiterleitung im Router gesetzt wird....es werden nur einfache textzeilen gesendet, aber es gibt <b>keinerlei sicherheits-checks!</B>.
 Geschrieben in Pascal, Kompiliert mit <a href=https://www.freepascal.org/>FPC</A> unter Nutzung von <a href=https://www.lazarus-ide.org/>Lazarus</a>.
 Es werden die Komponenten Lnet und bgraControls benötigt.
 <br><br>
