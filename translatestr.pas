@@ -83,6 +83,7 @@ resourcestring srvdialogLG2    = 'Client: Spiel laden zurückgewiesen';
 resourcestring srvdialogRsv1   = 'Spieler 2: Spalte:';
 resourcestring srvdialogRsv2   = ' Reihe:';
 resourcestring srvdialogRsv3   = ' Wert: ';
+resourcestring NetShowmsgstr   = 'Nachrichten Server/Client anzeigen';
 
 implementation
 

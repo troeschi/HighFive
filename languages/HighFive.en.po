@@ -13,52 +13,52 @@ msgstr ""
 
 #: tform1.bcsvgviewer1.caption
 msgid "BCSVGViewer1"
-msgstr ""
+msgstr "BCSVGViewer1"
 
 #: tform1.bcsvgviewer1.hint
 msgctxt "tform1.bcsvgviewer1.hint"
 msgid "Behalten durch anklicken "
-msgstr "Click to keep"
+msgstr "Keep by clicking"
 
 #: tform1.bcsvgviewer2.caption
 msgid "BCSVGViewer2"
-msgstr ""
+msgstr "BCSVGViewer2"
 
 #: tform1.bcsvgviewer2.hint
 msgctxt "tform1.bcsvgviewer2.hint"
 msgid "Behalten durch anklicken "
-msgstr "Click to keep"
+msgstr "Keep by clicking"
 
 #: tform1.bcsvgviewer3.caption
 msgid "BCSVGViewer3"
-msgstr ""
+msgstr "BCSVGViewer3"
 
 #: tform1.bcsvgviewer3.hint
 msgctxt "tform1.bcsvgviewer3.hint"
 msgid "Behalten durch anklicken "
-msgstr "Click to keep"
+msgstr "Keep by clicking"
 
 #: tform1.bcsvgviewer4.caption
 msgid "BCSVGViewer4"
-msgstr ""
+msgstr "BCSVGViewer4"
 
 #: tform1.bcsvgviewer4.hint
 msgctxt "tform1.bcsvgviewer4.hint"
 msgid "Behalten durch anklicken "
-msgstr "Click to keep"
+msgstr "Keep by clicking"
 
 #: tform1.bcsvgviewer5.caption
 msgid "BCSVGViewer5"
-msgstr ""
+msgstr "BCSVGViewer5"
 
 #: tform1.bcsvgviewer5.hint
 msgctxt "tform1.bcsvgviewer5.hint"
 msgid "Behalten durch anklicken "
-msgstr "Click to keep"
+msgstr "Keep by clicking"
 
 #: tform1.bcsvgviewer6.caption
 msgid "BCSVGViewer6"
-msgstr ""
+msgstr "BCSVGViewer6"
 
 #: tform1.bcsvgviewer6.hint
 msgid "Würfeln"
@@ -115,7 +115,7 @@ msgstr "192.168.100.100"
 
 #: tform1.panel1.caption
 msgid "Panel1"
-msgstr ""
+msgstr "Panel1"
 
 #: tform1.speedbutton1.hint
 msgid "Rückgängig"
@@ -127,7 +127,7 @@ msgstr "End move"
 
 #: tform1.speedbutton11.hint
 msgid "Ein- / Ausgehende Nachrichten"
-msgstr "In-/Out messages"
+msgstr "Incoming / outgoing messages"
 
 #: tform1.speedbutton12.hint
 msgctxt "tform1.speedbutton12.hint"
@@ -183,8 +183,8 @@ msgid ""
 "Server Start / Verbinden -\n"
 "oder Verbindung trennen"
 msgstr ""
-"Server Start / Connect -\n"
-"or disconnect"
+"Server start / stop\n"
+"or close connection"
 
 #: tform1.statictext1.caption
 msgctxt "tform1.statictext1.caption"
@@ -251,67 +251,71 @@ msgstr "Info"
 
 #: tform4.statictext1.caption
 msgid "Written by "
-msgstr ""
+msgstr "Written by "
 
 #: tform4.statictext10.caption
 msgid "BGRAControls"
-msgstr ""
+msgstr "BGRAControls"
 
 #: tform4.statictext11.caption
-msgid "Dice graphics (Skoll) provided under the Creative Commons 3.0 BY Andy Meneely:"
+msgid ""
+"Dice graphics (Skoll) provided under the Creative Commons 3.0 BY Andy "
+"Meneely:"
 msgstr ""
+"Dice graphics (Skoll) provided under the Creative Commons 3.0 BY Andy "
+"Meneely:"
 
 #: tform4.statictext12.caption
 msgid "http://www.se.rit.edu/~andy/"
-msgstr ""
+msgstr "http://www.se.rit.edu/~andy/"
 
 #: tform4.statictext13.caption
 msgid "Icons used can be found "
-msgstr ""
+msgstr "Icons used can be found "
 
 #: tform4.statictext14.caption
 msgid "Here"
-msgstr ""
+msgstr "Here"
 
 #: tform4.statictext15.caption
 msgid "Source Code on GitHub: "
-msgstr ""
+msgstr "Source Code on GitHub: "
 
 #: tform4.statictext16.caption
 msgid "Troeschi/HighFive"
-msgstr ""
+msgstr "Troeschi/HighFive"
 
 #: tform4.statictext2.caption
 msgid "StaticText2"
-msgstr ""
+msgstr "StaticText2"
 
 #: tform4.statictext3.caption
 msgid "A.Trösch"
-msgstr ""
+msgstr "A.Trösch"
 
 #: tform4.statictext4.caption
 msgid "Compiled with "
-msgstr ""
+msgstr "Compiled with "
 
 #: tform4.statictext5.caption
 msgid "FPC "
-msgstr ""
+msgstr "FPC "
 
 #: tform4.statictext6.caption
 msgid "using"
-msgstr ""
+msgstr "using"
 
 #: tform4.statictext7.caption
 msgid "Lazarus"
-msgstr ""
+msgstr "Lazarus"
 
 #: tform4.statictext8.caption
 msgid "Libaries used: "
-msgstr ""
+msgstr "Libaries used: "
 
 #: tform4.statictext9.caption
 msgid "Lnet,"
-msgstr ""
+msgstr "Lnet,"
 
 #: tform5.button1.caption
 msgctxt "tform5.button1.caption"
@@ -346,6 +350,15 @@ msgstr ""
 msgid "Form6"
 msgstr "Options"
 
+#: tform6.checkbox1.caption
+msgctxt "tform6.checkbox1.caption"
+msgid "Nachrichten Server/Client anzeigen"
+msgstr "Show Server/Client messages"
+
+#: tform6.checkbox2.caption
+msgid "Soundeffekte"
+msgstr "Sound effects"
+
 #: tform6.label1.caption
 msgid "Host:"
 msgstr "Host:"
@@ -367,8 +380,10 @@ msgid "(Zeitverzögerung der Würfelanimation)"
 msgstr "Delay for dice animation"
 
 #: tform6.statictext2.caption
-msgid "(Zeitverzögerung bei Senden der Nachrichten)"
-msgstr "Delay sending network messages"
+msgid ""
+"(Zeitverzögerung bei Senden der\n"
+" Nachrichten)"
+msgstr "(Delay sending messages)"
 
 #: translatestr.allreadyusedstr
 msgid "Bereits genutzt!"
@@ -415,6 +430,11 @@ msgstr "Load game:"
 msgid "Netzwerkspiele lädt der Server-Spieler!"
 msgstr "Network games only loaded by the server!"
 
+#: translatestr.netshowmsgstr
+msgctxt "translatestr.netshowmsgstr"
+msgid "Nachrichten Server/Client anzeigen"
+msgstr "Show Server/Client messages"
+
 #: translatestr.newgamestr1
 msgid "Neues Spiel starten ?"
 msgstr "Start new game?"
@@ -437,7 +457,7 @@ msgstr "Message:"
 
 #: translatestr.savegamestr1
 msgid "Fehler beim Speichern von "
-msgstr "Error saving"
+msgstr "Error saving "
 
 #: translatestr.savegamestr2
 msgid "Netzwerkspiele speichert der Server-Spieler!"
@@ -527,33 +547,31 @@ msgstr " Value: "
 
 #: translatestr.strikestr1
 msgid "3er streichen ?"
-msgstr "3er, strike?"
+msgstr "3er, cross out?"
 
 #: translatestr.strikestr2
 msgid "4er streichen ?"
-msgstr "4er, strike?"
+msgstr "4er, cross out?"
 
 #: translatestr.strikestr3
 msgid "Kl. Strasse streichen ?"
-msgstr "L. street, strike?"
+msgstr "L. street, cross out?"
 
 #: translatestr.strikestr4
 msgid "Gr. Strasse streichen ?"
-msgstr "G. street strike?"
+msgstr "G. street cross out?"
 
 #: translatestr.strikestr5
 msgid "Full House streichen ?"
-msgstr "Full house, strike?"
+msgstr "Full house, cross out?"
 
 #: translatestr.strikestr6
-#, fuzzy
-#| msgid "Kniffel streichen ?"
 msgid "HighFive streichen ?"
-msgstr "HighFive, strike?"
+msgstr "HighFive, cross out?"
 
 #: translatestr.strikestr7
 msgid "Chance schreiben ?"
-msgstr "Chance, strike?"
+msgstr "Chance, cross out?"
 
 #: translatestr.svdlgcaption1
 msgid "Spiel Speichern"
@@ -573,7 +591,7 @@ msgstr "In this column, every leading field must be filled first!"
 
 #: translatestr.valgridstr2
 msgid "In dieser Reihe muss jedes untere Feld erst ausgefüllt werden!"
-msgstr "In this row, every following field must be filled!"
+msgstr "In this column, every following field must be filled first!"
 
 #: translatestr.valgridstr3
 msgid "In dieser Reihe muss der obere Teil als erstes ausgefüllt werden!"
@@ -582,4 +600,3 @@ msgstr "In this column, the upper fields must be filled first!"
 #: translatestr.valgridstr4
 msgid "In dieser Reihe muss der untere Teil als erstes ausgefüllt werden!"
 msgstr "In this column, the lower fields must be filled first!"
-

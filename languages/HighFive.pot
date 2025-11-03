@@ -334,6 +334,15 @@ msgstr ""
 msgid "Form6"
 msgstr ""
 
+#: tform6.checkbox1.caption
+msgctxt "tform6.checkbox1.caption"
+msgid "Nachrichten Server/Client anzeigen"
+msgstr ""
+
+#: tform6.checkbox2.caption
+msgid "Soundeffekte"
+msgstr ""
+
 #: tform6.label1.caption
 msgid "Host:"
 msgstr ""
@@ -355,7 +364,9 @@ msgid "(Zeitverzögerung der Würfelanimation)"
 msgstr ""
 
 #: tform6.statictext2.caption
-msgid "(Zeitverzögerung bei Senden der Nachrichten)"
+msgid ""
+"(Zeitverzögerung bei Senden der\n"
+" Nachrichten)"
 msgstr ""
 
 #: translatestr.allreadyusedstr
@@ -401,6 +412,11 @@ msgstr ""
 
 #: translatestr.netgamestr1
 msgid "Netzwerkspiele lädt der Server-Spieler!"
+msgstr ""
+
+#: translatestr.netshowmsgstr
+msgctxt "translatestr.netshowmsgstr"
+msgid "Nachrichten Server/Client anzeigen"
 msgstr ""
 
 #: translatestr.newgamestr1

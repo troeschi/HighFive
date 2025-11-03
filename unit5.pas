@@ -78,9 +78,8 @@ end;
 
 procedure TForm5.listbox_readitems;
 var tf : Tstringlist;
-    i  : integer;
+    i,j: integer;
     sa : array of string;
-    str: string;
 begin
  tf:=Tstringlist.create;
  if(not fileexists(Form1.user_path+DirectorySeparator+'highscrore.txt')) then
@@ -88,12 +87,14 @@ begin
  else
   tf.LoadFromFile(Form1.user_path+DirectorySeparator+'highscrore.txt');
  stringgrid1.RowCount:=tf.Count;
- for i:=0 to tf.Count-1 do
+ j:=0;
+ for i:=tf.Count-1 downto 0 do
    begin
+    inc(j);
     sa:=tf[i].Split(':');
-    stringgrid1.Cells[0,i]:=inttostr(i+1);
-    stringgrid1.Cells[1,i]:=sa[0];
-    stringgrid1.Cells[2,i]:=sa[1];
+    stringgrid1.Cells[0,j-1]:=inttostr(j);
+    stringgrid1.Cells[1,j-1]:=sa[0];
+    stringgrid1.Cells[2,j-1]:=sa[1];
    end;
 end;
 

@@ -31,7 +31,8 @@ interface
 
 uses
   Classes, SysUtils, Forms, Controls, Graphics, Dialogs, ExtCtrls, StdCtrls,
-  Grids, Buttons, DividerBevel, BCSVGViewer, lNetComponents, strUtils, Unit2, 
+  Grids, Buttons, DividerBevel, BCSVGViewer, uplaysound, lNetComponents,
+  strUtils, Unit2,
   {$IFDEF unix}
   clocale,ComCtrls,
   {$ENDIF}
@@ -77,6 +78,7 @@ type
     Panel1: TPanel;
     Panel2: TPanel;
     Panel3: TPanel;
+    playsound1: Tplaysound;
     SpeedButton1: TSpeedButton;
     SpeedButton10: TSpeedButton;
     SpeedButton11: TSpeedButton;
@@ -164,6 +166,7 @@ type
     DiceDelay  : integer;
     SrvDelay   : integer;
     ShowMsg    : boolean;
+    SndOn      : boolean;
     UndoResult : array[0..5] of integer;
     DiceResult : array[0..4] of integer;
     SortResult : array[0..4] of integer;
@@ -221,9 +224,9 @@ begin
  LTCPComponent1.Port:=HF_ini.ReadInteger('Net','Port',29175);
  SrvDelay:=HF_ini.ReadInteger('Net','SrvDelay',1000);
  ShowMsg:=HF_ini.ReadBool('Net','ShowMsg',false);
- showmsg:=false;
  DiceDelay:=HF_ini.ReadInteger('Options','DiceDelay',40);
  setdefaultlang(HF_ini.ReadString('Options','Lang','de'));
+ SndOn:=HF_ini.ReadBool('Options','PlaySound',true);
  HF_ini.free;
  DividerBevel2.Font.Color:=clGray;
  SpeedButton1.Enabled:=false;
@@ -272,9 +275,14 @@ end;
 procedure TForm1.countTotal;
 var i : integer;
 begin
- score_Player1:=0;
  for i:=1 to 5 do
-  score_Player1:=score_Player1+strtoint(stringgrid1.Cells[i,16]);
+  begin
+   if(isPlayer1 = true) then
+    score_Player1:=score_Player1+strtoint(stringgrid1.Cells[i,16])
+   else
+    if(ServerConnected = false) and (oneplayer = false) then
+    score_Player2:=score_Player2+strtoint(stringgrid2.Cells[i,16]);
+  end;
 end;
 
 
@@ -382,6 +390,8 @@ begin
   3 : diceroll3.visible:=false;
  end;
  randomize;
+ playsound1.SoundFile:=user_path+DirectorySeparator+'dice.wav';
+ playsound1.Execute;
  for j:=1 to 5 do
   for i:=0 to 6 do
    begin
@@ -472,7 +482,7 @@ begin
  HF_ini.WriteInteger('Net','SrvDelay',SrvDelay);
  HF_ini.WriteBool('Net','ShowMsg',ShowMsg);
  HF_ini.WriteInteger('Options','DiceDelay',DiceDelay);
- HF_ini.WriteString('Options','Lang',setdefaultlang(''));
+ HF_ini.WriteBool('Options','PlaySound',SndOn);
  HF_ini.free;
 end;
 
@@ -650,6 +660,7 @@ var asource, amsg : string;
     i,j           : integer;
 begin
  amsg:='';
+ statictext2.Caption:='';
  aSocket.GetMessage(amsg);
  if(ShowMsg = true) then
   begin
@@ -669,11 +680,20 @@ begin
                    0,round(left+(width/2)),top+100);
    gamestarted:=false;
   end;
- if(amsg = 'Load refused') then
+ if(amsg = 'New refused') then
   begin
    messagedlgpos(srvdialogNG2,mtInformation,[mbOk],
                    0,round(left+(width/2)),top+100);
    gamestarted:=false;
+  end;
+ if(Pos('Pmessage:',amsg) > 0) then
+  begin
+   amsg:=copy(amsg,10,length(amsg));
+   statictext2.Caption:=statictext2.Caption+SlineBreak+
+                        PmessageStr+amsg;
+   playsound1.SoundFile:=user_path+DirectorySeparator+'message.wav';
+   playsound1.Execute;
+   exit;
   end;
  if(pos('Score:',amsg) > 0) then
   begin
@@ -731,12 +751,6 @@ begin
    speedbutton11.ImageIndex:=26;
    statictext2.Caption:=statictext2.Caption+SlineBreak+
                         srvdialogRsv1+str_array[0]+srvdialogRsv2+str_array[1]+srvdialogRsv3+str_array[2];
-  end;
- if(Pos('Pmessage:',amsg) > 0) then
-  begin
-   amsg:=copy(amsg,10,length(amsg));
-   statictext2.Caption:=statictext2.Caption+SlineBreak+
-                        PmessageStr+amsg;
   end;
  if(pos('game.ini:',amsg) > 0) then
   begin
@@ -863,9 +877,11 @@ begin
      speedbutton10.Enabled:=false;
     end;
    if(ServerConnected = true) then
-    sendValues(valueStr);
-   if(score_Player1 > 0) then
-    sendvalues('Score:'+inttostr(score_Player1))
+    begin
+     sendValues(valueStr);
+     if(score_Player1 > 0) then
+      sendvalues('Score:'+inttostr(score_Player1))
+    end;
   end;
 end;
 
@@ -882,13 +898,21 @@ end;
 
 
 procedure TForm1.SpeedButton12Click(Sender: TObject);
+var HF_ini : Tinifile;
 begin
+ HF_ini:=Tinifile.create(user_path+DirectorySeparator+'HighFive.ini');
+ HF_ini.WriteString('Options','Lang','de');
+ HF_ini.free;
  SetDefaultLang('de');
 end;
 
 
 procedure TForm1.SpeedButton13Click(Sender: TObject);
+var HF_ini : Tinifile;
 begin
+ HF_ini:=Tinifile.create(user_path+DirectorySeparator+'HighFive.ini');
+ HF_ini.WriteString('Options','Lang','en');
+ HF_ini.free;
  SetDefaultLang('en');
 end;
 
@@ -938,12 +962,16 @@ begin
  Form6.Edit2.text:=inttostr(LTCPComponent1.Port);
  Form6.Edit3.text:=inttostr(DiceDelay);
  Form6.Edit4.text:=inttostr(SrvDelay);
+ Form6.checkbox1.Checked:=showMsg;
+ Form6.CheckBox2.Checked:=SndOn;
  if(Form6.ShowModal = mrOk) then
   begin
    LTCPComponent1.Host:=Form6.Edit1.text;
    LTCPComponent1.Port:=strtoint(Form6.Edit2.text);
    DiceDelay:=strtoint(Form6.Edit3.text);
    SrvDelay:=strtoint(Form6.Edit4.text);
+   ShowMsg:=Form6.checkbox1.Checked;
+   SndOn:=Form6.checkbox2.Checked;
   end;
 end;
 
@@ -1137,6 +1165,7 @@ begin
    deleteDirectory(user_path+DirectorySeparator+game_name,false)
   else
    exit;
+ showmessage(user_path+DirectorySeparator+game_name);
  if(createDir(user_path+DirectorySeparator+game_name)) then
   begin
    GF_ini:=Tinifile.create(user_path+DirectorySeparator+game_name+DirectorySeparator+'game.ini');
@@ -1199,6 +1228,13 @@ begin
  Form2.image1.ImageIndex:=13;
  if(onePlayer = false) then
   begin
+   if(not directoryExists(user_path+DirectorySeparator+'TwoPlayer')) then
+    if(not createdir(user_path+DirectorySeparator+'TwoPlayer')) then
+     begin
+      messagedlgpos(cantCreateDir1+user_path+DirectorySeparator+'TwoPlayer'+cantCreateDir2,mtError,
+                 [mbOk],0,round(left+(width/2)),top+100);
+      exit;
+     end;
    gametype:=DirectorySeparator+'TwoPlayer';
    Form2.image1.ImageIndex:=19;
    Form2.image3.ImageIndex:=29;
@@ -1206,12 +1242,19 @@ begin
   end;
  if(serverConnected = true) then
   begin
+   if(not directoryExists(user_path+DirectorySeparator+'NetGames')) then
+    if(not createdir(user_path+DirectorySeparator+'NetGames')) then
+     begin
+      messagedlgpos(cantCreateDir1+user_path+DirectorySeparator+'NetGames'+cantCreateDir2,mtError,
+                 [mbOk],0,round(left+(width/2)),top+100);
+      exit;
+     end;
    gametype:=DirectorySeparator+'NetGames';
    Form2.image1.ImageIndex:=19;
    Form2.image2.ImageIndex:=32;
    Form2.image3.ImageIndex:=16;
   end;
- DirList:=FindAllDirectories(Form1.user_Path+gametype, false);
+ DirList:=FindAllDirectories(user_Path+gametype, false);
  Form2.ListBox1.Items.Assign(DirList);
  DirList.Free;
  for i:=Form2.Listbox1.Count-1 downto 0 do
@@ -1432,9 +1475,17 @@ begin
  if((diceroll > 0) and (isWritten = false)) then
   begin
    if(isPlayer1 = true) then
-    GameField:=StringGrid1
+    begin
+     GameField:=StringGrid1;
+     if(Sender as TstringGrid).name <> 'StringGrid1' then
+      exit;
+    end
    else
-    GameField:=StringGrid2;
+    begin
+     GameField:=StringGrid2;
+     if(Sender as TstringGrid).name <> 'StringGrid2' then
+      exit;
+    end;
    if(not ((GameField.row > 0) and (GameField.row < 7)) and
      (not ((GameField.row > 8) and (GameField.row < 16)))) then
     exit;
@@ -1544,6 +1595,8 @@ begin
           if(messagedlgpos(strikeStr1,mtConfirmation,[mbYes,mbNo],0,
                           round(left+(width/2)),top+100) = mrYes) then
            begin
+            playsound1.SoundFile:=user_path+DirectorySeparator+'laugh.wav';
+            playsound1.Execute;
             GameField.Cells[col,9]:='0';
             isWritten:=true;
            end;
@@ -1556,6 +1609,8 @@ begin
           if(messagedlgpos(strikeStr2,mtConfirmation,[mbYes,mbNo],0,
                           round(left+(width/2)),top+100) = mrYes) then
            begin
+            playsound1.SoundFile:=user_path+DirectorySeparator+'laugh.wav';
+            playsound1.Execute;
             GameField.Cells[col,10]:='0';
             isWritten:=true;
            end;
@@ -1568,6 +1623,8 @@ begin
           if(messagedlgpos(strikeStr3,mtConfirmation,[mbYes,mbNo],0,
                           round(left+(width/2)),top+100) = mrYes) then
            begin
+            playsound1.SoundFile:=user_path+DirectorySeparator+'laugh.wav';
+            playsound1.Execute;
             GameField.Cells[col,11]:='0';
             isWritten:=true;
            end;
@@ -1580,6 +1637,8 @@ begin
           if(messagedlgpos(strikeStr4,mtConfirmation,[mbYes,mbNo],0,
                           round(left+(width/2)),top+100) = mrYes) then
            begin
+            playsound1.SoundFile:=user_path+DirectorySeparator+'laugh.wav';
+            playsound1.Execute;
             GameField.Cells[col,12]:='0';
             isWritten:=true;
            end;
@@ -1592,11 +1651,15 @@ begin
           if(messagedlgpos(strikeStr5,mtConfirmation,[mbYes,mbNo],0,
                           round(left+(width/2)),top+100) = mrYes) then
            begin
+            playsound1.SoundFile:=user_path+DirectorySeparator+'laugh.wav';
+            playsound1.Execute;
             GameField.Cells[col,13]:='0';
             isWritten:=true;
            end;
     14 : if(isFive) then
           begin
+           playsound1.SoundFile:=user_path+DirectorySeparator+'victory.wav';
+           playsound1.Execute;
            GameField.Cells[col,14]:='50';
            isWritten:=true;
           end
@@ -1604,6 +1667,8 @@ begin
           if(messagedlgpos(strikeStr6,mtConfirmation,[mbYes,mbNo],0,
                           round(left+(width/2)),top+100) = mrYes) then
            begin
+            playsound1.SoundFile:=user_path+DirectorySeparator+'laugh.wav';
+            playsound1.Execute;
             GameField.Cells[col,14]:='0';
             isWritten:=true;
            end;

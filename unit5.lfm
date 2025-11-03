@@ -10,6 +10,7 @@ object Form5: TForm5
   ClientWidth = 382
   Color = clSkyBlue
   Position = poMainFormCenter
+  LCLVersion = '4.2.0.0'
   OnShow = FormShow
   object Edit1: TEdit
     Left = 24

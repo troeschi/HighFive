@@ -38,6 +38,8 @@ type
   TForm6 = class(TForm)
     BitBtn1: TBitBtn;
     BitBtn2: TBitBtn;
+    CheckBox1: TCheckBox;
+    CheckBox2: TCheckBox;
     Edit1: TEdit;
     Edit2: TEdit;
     Edit3: TEdit;
@@ -61,5 +63,6 @@ implementation
 
 {$R *.lfm}
 
-end.
+{ TForm6 }
 
+end.

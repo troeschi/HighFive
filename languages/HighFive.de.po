@@ -226,15 +226,15 @@ msgstr "Spiel speichern"
 
 #: tform2.image1.hint
 msgid "One Player Games"
-msgstr "One Player Games"
+msgstr "Einzelspieler Spielstände"
 
 #: tform2.image2.hint
 msgid "Two Player Games"
-msgstr "Two Player Games"
+msgstr "Zwei Spieler Spielstände"
 
 #: tform2.image3.hint
 msgid "Network Games"
-msgstr "Network Games"
+msgstr "Netzwerk Spielstände"
 
 #: tform2.label1.caption
 msgid "Vorhandene Spielstände:"
@@ -258,8 +258,12 @@ msgid "BGRAControls"
 msgstr "BGRAControls"
 
 #: tform4.statictext11.caption
-msgid "Dice graphics (Skoll) provided under the Creative Commons 3.0 BY Andy Meneely:"
-msgstr "Dice graphics (Skoll) provided under the Creative Commons 3.0 BY Andy Meneely:"
+msgid ""
+"Dice graphics (Skoll) provided under the Creative Commons 3.0 BY Andy "
+"Meneely:"
+msgstr ""
+"Dice graphics (Skoll) provided under the Creative Commons 3.0 BY Andy "
+"Meneely:"
 
 #: tform4.statictext12.caption
 msgid "http://www.se.rit.edu/~andy/"
@@ -346,6 +350,15 @@ msgstr "Title"
 msgid "Form6"
 msgstr "Optionen"
 
+#: tform6.checkbox1.caption
+msgctxt "tform6.checkbox1.caption"
+msgid "Nachrichten Server/Client anzeigen"
+msgstr "Nachrichten Server/Client anzeigen"
+
+#: tform6.checkbox2.caption
+msgid "Soundeffekte"
+msgstr "Soundeffekte"
+
 #: tform6.label1.caption
 msgid "Host:"
 msgstr "Host:"
@@ -367,8 +380,12 @@ msgid "(Zeitverzögerung der Würfelanimation)"
 msgstr "(Zeitverzögerung der Würfelanimation)"
 
 #: tform6.statictext2.caption
-msgid "(Zeitverzögerung bei Senden der Nachrichten)"
-msgstr "(Zeitverzögerung bei Senden der Nachrichten)"
+msgid ""
+"(Zeitverzögerung bei Senden der\n"
+" Nachrichten)"
+msgstr ""
+"(Zeitverzögerung bei Senden der\n"
+" Nachrichten)"
 
 #: translatestr.allreadyusedstr
 msgid "Bereits genutzt!"
@@ -414,6 +431,11 @@ msgstr "Lade Spiel:"
 #: translatestr.netgamestr1
 msgid "Netzwerkspiele lädt der Server-Spieler!"
 msgstr "Netzwerkspiele lädt der Server-Spieler!"
+
+#: translatestr.netshowmsgstr
+msgctxt "translatestr.netshowmsgstr"
+msgid "Nachrichten Server/Client anzeigen"
+msgstr "Nachrichten Server/Client anzeigen"
 
 #: translatestr.newgamestr1
 msgid "Neues Spiel starten ?"
@@ -546,8 +568,6 @@ msgid "Full House streichen ?"
 msgstr "Full House streichen ?"
 
 #: translatestr.strikestr6
-#, fuzzy
-#| msgid "Kniffel streichen ?"
 msgid "HighFive streichen ?"
 msgstr "HighFive streichen ?"
 
@@ -581,5 +601,5 @@ msgstr "In dieser Reihe muss der obere Teil als erstes ausgefüllt werden!"
 
 #: translatestr.valgridstr4
 msgid "In dieser Reihe muss der untere Teil als erstes ausgefüllt werden!"
-msgstr "In dieser Reihe muss der untere Teil als erstes ausgefüllt werden!"
-
+msgstr ""
+"In dieser Reihe muss der untere Teil als erstes ausgefüllt werden!"
