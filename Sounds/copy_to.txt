@@ -1,0 +1,2 @@
+copy the *.wav files to
+Users/USERNAME/appdata/HighFive
